@@ -105,7 +105,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  - Login Form
  - Sign Up Form
  - form validation
- - use Ref hook
+ - useRef hook
+ - Firebase setup
+ - Deploying our app to Production
+ - Create SignUp User Account
+ - Implemented sign out
+ - Update Profile with name
+ - Bug fix of Sign up user Display name and profile picture update
+ 
 
 # Features
 - Login/Sign UP
