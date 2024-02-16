@@ -9,6 +9,8 @@ import { updateProfile } from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser} from "../utils/userSlice";
+import { USER_IMG } from "../utils/constant";
+import { NETFLIX_BGIMG_URL } from "../utils/constant";
 
 const LogIn = () => {
   const [isSigNInForm, setIsSignInForm] = useState(true);
@@ -42,7 +44,7 @@ const LogIn = () => {
 
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/88839224?v=4",
+            photoURL: USER_IMG,
           })
             .then(() => {
         
@@ -96,7 +98,7 @@ const LogIn = () => {
       <div className="absolute">
         <img
           className=""
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_small.jpg"
+          src={NETFLIX_BGIMG_URL}
           alt="bg-img"
         />
       </div>

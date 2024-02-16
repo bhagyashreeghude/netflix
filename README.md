@@ -112,6 +112,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  - Implemented sign out
  - Update Profile with name
  - Bug fix of Sign up user Display name and profile picture update
+ -  unsubscribed to the onAuthStateChanged callback when component unmount
+ - add hardcoded data into constant file
  
 
 # Features
