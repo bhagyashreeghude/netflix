@@ -114,6 +114,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  - Bug fix of Sign up user Display name and profile picture update
  -  unsubscribed to the onAuthStateChanged callback when component unmount
  - add hardcoded data into constant file
+ - Registered to TMDB API & create an app & get access token
+ - Get data from TMDB now playing movies list API
+ - Custom hooks for Now playing movies
+ - update store with movies data
+ - planning for main and secondary container
+ - featch data for Trailer video
+  - Update store  with Trailer video
+  - Embeded the youtube video and make it autoplay and mute
+  - tailwind classes to make main container awesome
  
 
 # Features
