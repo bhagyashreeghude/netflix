@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-const movueSlice = createSlice({
+const movieSlice = createSlice({
     name:"movies",
     initialState:{
         nowPlayingMovies : null,
@@ -11,9 +11,19 @@ const movueSlice = createSlice({
         },
         addTrailerVideo: (state,action) =>{
             state.trailerVideo =action.payload;
-        }
+        },
+        addPopularMovies :(state,action)=>{
+            state.PopularMovies = action.payload;
+        },
+        addTopratedMovies :(state,action)=>{
+            state.TopratedMovies = action.payload;
+        },
+        addUpComingMovies :(state,action)=>{
+            state.UpComingMovies = action.payload;
+        },
+
     }
 });
-export const {addNowPlayingMovie, addTrailerVideo}= movueSlice.actions;
-export default movueSlice.reducer;
+export const {addNowPlayingMovie, addTrailerVideo,addPopularMovies,addTopratedMovies,addUpComingMovies}= movieSlice.actions;
+export default movieSlice.reducer;
 

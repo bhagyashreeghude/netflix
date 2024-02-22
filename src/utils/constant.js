@@ -14,6 +14,8 @@ export const API_OPTIONS = {
     }
   };
   
+export const IMG_CDN_URL ="https://image.tmdb.org/t/p/w200";
+
 
 export const API_KEY="c0f983bfaf67a313120a0a54930a229b";
 
