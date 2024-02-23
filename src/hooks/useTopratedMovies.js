@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useDispatch} from "react-redux";
+import { useDispatch,useSelector} from "react-redux";
 import { addTopratedMovies } from "../utils/movieSlice";
 import { API_OPTIONS} from "../utils/constant";
 //Fetach data from tmdb api and update store
@@ -8,6 +8,10 @@ import { API_OPTIONS} from "../utils/constant";
 const useTopratedMovies =()=>{
 
     const dispatch = useDispatch();
+    
+    const topratedMovies = useSelector(
+      (store) => store?.movies?.topratedMovies
+    );
 
     const getTopratedMovies = async () => {
         const data = await fetch(
@@ -21,6 +25,7 @@ const useTopratedMovies =()=>{
       };
       
       useEffect (()=>{
+        if(!topratedMovies)
         getTopratedMovies();
       },[])
       // console.log(object);
