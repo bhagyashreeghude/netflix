@@ -4,17 +4,16 @@ import GptSearchSuggestions from './GptSearchSuggestions';
 import { NETFLIX_BGIMG_URL } from '../utils/constant';
 const GptSearch = () => {
   return (
-    <div>
+    <>
+    
       <div className="absolute -z-10">
-        <img
-          className=""
-          src={NETFLIX_BGIMG_URL}
-          alt="bg-img"
-        />
+        <img  alt="bg-img"  src={NETFLIX_BGIMG_URL}/>
       </div>
-    <GptSearchBar/>
-    <GptSearchSuggestions/>
-    </div>
+      <div >
+        <GptSearchBar/>
+        <GptSearchSuggestions/>
+      </div>
+      </>
   )
 }
 
