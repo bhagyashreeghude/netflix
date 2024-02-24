@@ -5,13 +5,11 @@ import { IMG_CDN_URL } from "../utils/constant";
 const MovieCard = ({ posterPath }) => {
 
 
-
+if(!posterPath) return "Poster is not present"
   return (
-    <div className="rounded-2xl flex pr-4 hover:scale-x-150 transition-duration-500 cursor-pointer object-cover h-44 w-36" >
+    <div className="w-36 md:w-48 pr-2 " >
       <img className="rounded-xl"
       alt="Movie_card" src={IMG_CDN_URL + posterPath} />
-
-    
     </div>
   );
 };

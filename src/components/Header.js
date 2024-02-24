@@ -56,10 +56,10 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row">
+    <div className="absolute w-screen md:px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row">
       <img className=" w-44 mx-auto md:mx-0 " src={NETFLIX_LOGO_URL} alt="logo" />
       {user && (
-        <div className="flex  pl-[700px]" onChange={handleLanguageChange}>
+        <div className="flex md:pl-[700px]" onChange={handleLanguageChange}>
           {showGptSearch && (
             <select className="p-2 m-2 h-12 w-20 bg-gray-700  rounded-lg">
               {SUPPORTED_LANGUAGES.map((lang) => (
@@ -83,9 +83,9 @@ const Header = () => {
             alt="usericon"
             src={user?.photoURL}
           />
-          <p className="font-bold my-8 text-yellow-500">
+          <p className="hidden font-bold my-8 text-yellow-500">
             Hi
-            <span> {user.displayName} !</span>
+            <span className=""> {user.displayName} !</span>
           </p>
 
           <button

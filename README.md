@@ -129,12 +129,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
  - tmdb img CDN URL
  - made the browse page amazing with tailwind
  - made custom hooks
+ - 
 
  - -  - - - - - - - - - - -
  - GPT
     -   gpt search
     - gpt search bar
     - Multi language feature in our App
+    - get open API key
+    - get search API ket
+    - Fetch movies suggestion from TMDB
+    - Reused Movie list component to make movie suggestion container
+    - Memoization
+    - Added .env file
+    - Adding .env file to gitignore
+    - Made our site Responsive
     
 
 # Features

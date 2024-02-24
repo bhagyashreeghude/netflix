@@ -7,8 +7,8 @@ const MovieList = ({ title, movies }) => {
   
   return (
     
-    <div className="p-2  text-white no-scrollbar">
-      <h1 className="text-3xl p-2">{title}</h1>
+    <div className="p-2  text-white ">
+      <h1 className="text-lg md:text-3xl p-2">{title}</h1>
       <div className="flex overflow-x-scroll no-scrollbar text-white">
         <div className="flex">
           {Array.isArray(movies) &&

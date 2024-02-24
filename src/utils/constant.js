@@ -12,16 +12,12 @@ export const API_OPTIONS = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMGY5ODNiZmFmNjdhMzEzMTIwYTBhNTQ5MzBhMjI5YiIsInN1YiI6IjY0ZGNmMGQ5NWFiODFhMDBmZmMwOTU5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eo3150eTurFS2FiYYmqx_aSlXXJHE1P5dnkAnUeej3o",
+      "Bearer "+ process.env.REACT_APP_TMDB_KEY
+      
   },
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w200";
-
-export const API_KEY = "c0f983bfaf67a313120a0a54930a229b";
-
-export const ACCESS_TOKEN =
-  "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMGY5ODNiZmFmNjdhMzEzMTIwYTBhNTQ5MzBhMjI5YiIsInN1YiI6IjY0ZGNmMGQ5NWFiODFhMDBmZmMwOTU5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eo3150eTurFS2FiYYmqx_aSlXXJHE1P5dnkAnUeej3o";
 
 export const SUPPORTED_LANGUAGES = [
   { identifier: "en", name: "English" },
@@ -29,4 +25,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "spanish", name: "Spanish" },
 ];
 
-export const OPENAI_KEY ="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";
+export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;

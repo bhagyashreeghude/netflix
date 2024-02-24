@@ -97,7 +97,7 @@ const LogIn = () => {
       <Header />
       <div className="absolute">
         <img
-          className=""
+          className="h-screen object-cover w-screen"
           src={NETFLIX_BGIMG_URL}
           alt="bg-img"
         />
@@ -105,9 +105,9 @@ const LogIn = () => {
       <div>
         <form
           onSubmit={(e) => e.preventDefault()}
-          className="cursor-pointer w-3/12 absolute  bg-black text-white  rounded-sm my-36 mx-auto right-0 left-0 bg-opacity-80 "
+          className="w-full justify-center md:w-3/12 absolute mt-[50%] bg-black text-white  rounded-sm md:my-36 md:mx-auto right-0 left-0 bg-opacity-80 "
         >
-          <h1 className="font-bold text-3xl mx-4 py-4">
+          <h1 className="font-bold md:text-3xl mx-2 text-2xl pb-4 md:mx-4 md:py-4">
             {isSigNInForm ? "Sign In" : "Sign Up"}
           </h1>
           {!isSigNInForm && (
@@ -125,14 +125,14 @@ const LogIn = () => {
             type="text"
             autoComplete="on"
             placeholder="Email Address"
-            className="p-4 mx-4  my-2 w-80 bg-slate-950 rounded-lg"
+            className=" p-2 pr-2 md:p-4 mx-4  my-2 w-80 bg-slate-950 rounded-lg"
           />
           {!isSigNInForm && (
             <input
               type="number"
               autoComplete="on"
               placeholder="Number"
-              className="p-4 mx-4  my-2 w-80 bg-slate-950 rounded-lg"
+              className="p-4 mx-2  my-2 w-80 bg-slate-950 rounded-lg"
             />
           )}
 
