@@ -1,36 +1,28 @@
 import { useEffect } from "react";
-import { useDispatch ,useSelector} from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addNowPlayingMovie } from "../utils/movieSlice";
 import { API_OPTIONS } from "../utils/constant";
 //Fetach data from tmdb api and update store
 
-
 const useNowPlayingMovies = () => {
   const dispatch = useDispatch();
 
-  const nowPlayingMovies = useSelector(
-    (store) => store?.movies?.nowPlayingMovies
-  );
+  // const nowPlayingMovies = useSelector(
+  //   (store) => store?.movies?.nowPlayingMovies
+  // );
 
   const getNowPlayingMovies = async () => {
-    try{
-      const data = await fetch(
-        "https://api.themoviedb.org/3/movie/now_playing?page=1",
-        API_OPTIONS
-      );
-      const json = await data.json();
-    // console.log(json.results);
+    const data = await fetch(
+      "https://api.themoviedb.org/3/movie/now_playing?page=1",
+      API_OPTIONS
+    );
+    const json = await data.json();
+    console.log(json.results);
     dispatch(addNowPlayingMovie(json.results));
-    }
-    catch(err){
-      console.log(err);
-    }
-    
   };
 
   useEffect(() => {
-    !nowPlayingMovies && getNowPlayingMovies();
-  }, []);
-  // console.log(object);
+    getNowPlayingMovies();
+  });
 };
 export default useNowPlayingMovies;

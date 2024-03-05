@@ -83,6 +83,8 @@ const LogIn = () => {
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
+          const res= errorCode + "-" + errorMessage;
+          // document.write("not match");
           console.log(errorCode + "-" + errorMessage);
         });
     }
@@ -147,7 +149,7 @@ const LogIn = () => {
             {errorMessage}
           </p>
           <button
-            className="p-4 mx-4 my-6 w-80 bg-red-600  rounded-lg"
+            className="p-4 mx-4 my-6 md:w-80 bg-red-600  rounded-lg"
             onClick={handleBtnClick}
           >
             {isSigNInForm ? "Sign In" : "Sign Up"}

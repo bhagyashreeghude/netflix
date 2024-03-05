@@ -26,3 +26,10 @@ export const SUPPORTED_LANGUAGES = [
 ];
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
+// {
+//   /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+//   "rules": {
+//     ".read": false,
+//     ".write": false
+//   }
+// }

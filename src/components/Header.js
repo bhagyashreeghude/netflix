@@ -83,7 +83,7 @@ const Header = () => {
             alt="usericon"
             src={user?.photoURL}
           />
-          <p className="hidden font-bold my-8 text-yellow-500">
+          <p className="hidden md:font-bold my-8 text-yellow-500">
             Hi
             <span className=""> {user.displayName} !</span>
           </p>

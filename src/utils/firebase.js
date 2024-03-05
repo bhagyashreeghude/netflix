@@ -1,3 +1,5 @@
+
+import {getAuth } from "firebase/auth"
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -7,18 +9,18 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyB-xggrEG_dbUR6l_ZCYpMSUOuAupuk3XY",
-  authDomain: "netflix-gpt2-3c477.firebaseapp.com",
-  databaseURL: "https://netflix-gpt2-3c477-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "netflix-gpt2-3c477",
-  storageBucket: "netflix-gpt2-3c477.appspot.com",
-  messagingSenderId: "1081816584262",
-  appId: "1:1081816584262:web:86d47b37fd876d3f53ba47",
-  measurementId: "G-Q994KC7S0G",
-  site: "movies-netflix-gpt",
+  apiKey: "AIzaSyAEaS8y2EbuiE-aZqju51IgJ5XEPhvYymQ",
+  authDomain: "netflix-gpt-4b933.firebaseapp.com",
+  databaseURL: "https://netflix-gpt-4b933-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "netflix-gpt-4b933",
+  storageBucket: "netflix-gpt-4b933.appspot.com",
+  messagingSenderId: "914397935043",
+  appId: "1:914397935043:web:603d1cbdf0b7eaca9e3976",
+  measurementId: "G-S8NC52SEFQ"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
+export const auth =getAuth();
