@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "netflix-gpt-india",
+    "site": "netflix-gpt-bhagyashree-555",
     "public": "build",
     "ignore": [
       "firebase.json",
