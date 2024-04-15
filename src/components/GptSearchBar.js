@@ -3,7 +3,7 @@ import lang from "../utils/languageConstants";
 import { useSelector,useDispatch } from "react-redux";
 import { useRef } from "react";
 import openai from "../utils/openai";
-import { API_OPTIONS } from "../utils/constant";
+import { API_OPTIONS, API_options } from "../utils/constant";
 import { addGptMovieResults } from "../utils/gptSlice";
 
 const GptSearchBar = () => {
@@ -17,7 +17,7 @@ const GptSearchBar = () => {
       "https://api.themoviedb.org/3/search/movie?query=" +
         movie +
         "&include_adult=false&language=en-US&page=1",
-      API_OPTIONS
+      API_options
     );
     const json = await data.json();
     return json.results;

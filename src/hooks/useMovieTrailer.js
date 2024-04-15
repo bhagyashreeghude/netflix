@@ -1,5 +1,5 @@
-import { API_OPTIONS,  } from "../utils/constant";
-import { useDispatch, useSelector } from "react-redux";
+import {  API_options  } from "../utils/constant";
+import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { addTrailerVideo } from "../utils/movieSlice";
 
@@ -14,7 +14,7 @@ const useMovieTrailer = (movieId) => {
       "https://api.themoviedb.org/3/movie/" +
         movieId +
         "/videos?language=en-US",
-      API_OPTIONS
+      API_options
     );
     const json = await data?.json();
     // console.log(json);

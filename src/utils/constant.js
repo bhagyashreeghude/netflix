@@ -7,16 +7,22 @@ export const NETFLIX_BGIMG_URL =
 export const USER_IMG =
   "https://occ-0-6469-3646.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABTZ2zlLdBVC05fsd2YQAR43J6vB1NAUBOOrxt7oaFATxMhtdzlNZ846H3D8TZzooe2-FT853YVYs8p001KVFYopWi4D4NXM.png?r=229";
 
-export const API_OPTIONS = {
-  method: "GET",
-  headers: {
-    accept: "application/json",
-    Authorization:
-      "Bearer "+ process.env.REACT_APP_TMDB_KEY
+// export const API_OPTIONS = {
+//   method: "GET",
+//   headers: {
+//     accept: "application/json",
+//     Authorization:
+//       "Bearer "+ process.env.REACT_APP_TMDB_KEY
       
-  },
+//   },
+// };
+export const API_options = {
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMGY5ODNiZmFmNjdhMzEzMTIwYTBhNTQ5MzBhMjI5YiIsInN1YiI6IjY0ZGNmMGQ5NWFiODFhMDBmZmMwOTU5MiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.eo3150eTurFS2FiYYmqx_aSlXXJHE1P5dnkAnUeej3o'
+  }
 };
-
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w200";
 
 export const SUPPORTED_LANGUAGES = [
@@ -33,3 +39,6 @@ export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
 //     ".write": false
 //   }
 // }
+
+export const t_key="eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjMGY5OD"
+export const auth_key="c0f983bfaf67a313120a0a54930a229b"
