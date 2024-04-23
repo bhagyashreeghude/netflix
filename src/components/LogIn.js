@@ -19,6 +19,8 @@ const LogIn = () => {
 
   const [passwordValue, setPasswordValue] = useState("");
   const [isPasswordChecked, setIsPasswordChecked] = useState(false);
+  const [isPasswordCheckedlen, setIsPasswordCheckedlen] = useState(false);
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -92,9 +94,13 @@ const LogIn = () => {
     setPasswordValue(newPasswordValue);
 
     // Regular expression for validating password
-    const passwordRegex = /^(?=.*[!@#$%^&*])(?=.*[A-Z]).{8,}$/;
+    const passwordRegex = /^(?=.*[!@#$%^&*])(?=.*[A-Z])$/;
     const isValidPassword = passwordRegex.test(newPasswordValue);
-    setIsPasswordChecked(isValidPassword);
+    const passwordRegexlen = /^.{8}$/;
+    const isValidPasswordlen= passwordRegexlen.test(newPasswordValue);
+    setIsPasswordChecked(isValidPassword)
+    setIsPasswordChecked(isValidPasswordlen);
+    ;
   };
 
   return (
@@ -177,19 +183,20 @@ const LogIn = () => {
               />
               <span className="pl-2">First letter is capital</span>
               <br />
-              {/* <input
+              <input
                 type="checkbox"
-                checked={isEmailChecked}
+                checked={isPasswordChecked}
                 onChange={() => {}}
+                
               />
-              <span className="pl-2">Email is valid</span>
-              <br /> */}
+              <span className="pl-2">Password contains minimum 8 characters</span>
+              <br />
               <input
                 type="checkbox"
                 checked={isPasswordChecked}
                 onChange={() => {}}
               />
-              <span className="pl-2">Password contains 1 special character and 1 capital letter and minimum 8 characters</span>
+              <span className="pl-2">Password contains 1 special character and 1 capital letter </span>
             </div>
           )}
         </form>
