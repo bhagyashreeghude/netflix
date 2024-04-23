@@ -1,16 +1,11 @@
 {
   "hosting": {
+    "site": "netflix-gpt-webapp-2000",
     "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
     ]
   }
 }

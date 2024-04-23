@@ -16,8 +16,8 @@ const firebaseConfig = {
   projectId: "netflix-gpt-india-cae12",
   storageBucket: "netflix-gpt-india-cae12.appspot.com",
   messagingSenderId: "998300983165",
-  appId: "1:998300983165:web:e90b01d0abf074203d3614",
-  measurementId: "G-L66BF56Y5R"
+  appId: "1:998300983165:web:c62df45a5c48fd993d3614",
+  measurementId: "G-XRENZXCLF3"
 };
 
 // Initialize Firebase
